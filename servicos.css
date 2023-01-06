@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background: #161623;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(40% at right 30%);
+    
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #1e08e7);
+    clip-path: circle(19% at 1% 47%);
+}
+
+header {
+    padding: 8px 0;
+    height: 90px;
+    border-bottom: 1px solid white;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+
+}
+
+.beleza h1 {
+    float: left;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Economica', sans-serif;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.studio h1 {
+    float: left;
+    margin-top: 30px;
+    color: yellow;
+    font-family: 'Economica', sans-serif;
+    font-size: 45px;
+    font-style: italic;
+}
+
+.menu {
+    float: right;
+    list-style: none;
+}
+
+.menu ul {
+    position: relative;
+    margin-top: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.menu a:hover {
+    transition: all 0.3s ease 0s;
+}
+
+button {
+    background-color: whitesmoke;
+    padding: 3px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    color: white;
+    animation: pulse 2s;
+    box-shadow: 0 0 0 2px;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+a, button {
+    font-family: 'Economica', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+.servicos {
+    margin-top: 0%;
+    justify-content: center;
+    text-align: center;
+}
+
+.servicos h2 {
+    font-family: 'Economica', sans-serif;
+    font-size: 60px;
+    color: white;
+    font-style: italic;
+}
+
+
+.box {
+    display: inline-block;
+    margin-left: 23%;
+    margin-top: 2%;
+    width: 500px;
+    height: auto;
+    margin-right: 5%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+
+}
+
+.masculino {
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.masculino a {
+    font-family: 'Economica', sans-serif;
+    margin-top: 5%;
+    margin-right: 15%;
+    float: right;
+    color: whitesmoke;
+    font-size: 45px;
+}
+
+.penteado {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 25%;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    float: left;
+    transition-duration: 2s;
+}
+
+.penteado:hover {
+    transform: rotate(-10deg);
+}
+
+.cabelo {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.cabelo:hover {
+    background: rgb(0, 193, 251);
+    background: linear-gradient(0deg, rgba(0, 193, 251, 1) 34%, rgba(5, 0, 250, 1) 100%);
+}
+
+.cabelo a {
+    font-style: bold;
+    font-family: 'Economica', sans-serif;
+    margin-top: 7%;
+    margin-left: 5%;
+    float: left;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+ul li {
+    color: white;
+    font-size: 18px;
+    font-family: 'Economica', sans-serif;
+    list-style: none;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.barba {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.barba:hover {
+    background: rgb(0, 193, 251);
+    background: linear-gradient(0deg, rgba(0, 193, 251, 1) 34%, rgba(5, 0, 250, 1) 100%);
+}
+
+.barba a {
+    font-family: 'Economica', sans-serif;
+    margin-top: 7%;
+    margin-left: 5%;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.cabelobarba {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.cabelobarba:hover {
+    background: rgb(0, 193, 251);
+    background: linear-gradient(0deg, rgba(0, 193, 251, 1) 34%, rgba(5, 0, 250, 1) 100%);
+}
+
+.cabelobarba a {
+    text-align: justify;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+    margin-top: 3%;
+    margin-left: 5%;
+    float: left;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.sobrancelha {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.sobrancelha:hover {
+    background: rgb(0, 193, 251);
+    background: linear-gradient(0deg, rgba(0, 193, 251, 1) 34%, rgba(5, 0, 250, 1) 100%);
+}
+
+.sobrancelha a {
+    font-family: 'Economica', sans-serif;
+    margin-top: 7%;
+    margin-left: 3%;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.boxf {
+    display: inline-block;
+    margin-right: 18%;
+    margin-top: 2%;
+    width: 500px;
+    height: auto;
+    margin-right: 10%;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    backdrop-filter: blur(5px);    
+}
+.feminino {
+    border-radius: 10px;
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.feminino a {
+    font-family: 'Economica', sans-serif;
+    margin-top: 5%;
+    margin-right: 15%;
+    float: right;
+    color: whitesmoke;
+    font-size: 45px;
+}
+
+.penteadof {
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 25%;
+    margin-top: 1.5%;
+    margin-left: 10%;
+    float: left;
+    transition-duration: 2s;
+}
+
+.penteadof:hover {
+    transform: rotate(-10deg);
+}
+
+.cabelof {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.cabelof:hover {
+    background: rgb(223, 95, 206);
+    background: linear-gradient(0deg, rgba(223, 95, 206, 1) 34%, rgba(252, 224, 255, 1) 100%);
+}
+
+.cabelof a {
+    font-style: bold;
+    font-family: 'Economica', sans-serif;
+    margin-top: 7%;
+    margin-left: 5%;
+    float: left;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+ul li {
+    color: white;
+    font-size: 18px;
+    font-family: 'Economica', sans-serif;
+    list-style: none;
+    text-align: right;
+    margin-right: 10%;
+}
+
+.manicure {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.manicure:hover {
+    background: rgb(223, 95, 206);
+    background: linear-gradient(0deg, rgba(223, 95, 206, 1) 34%, rgba(252, 224, 255, 1) 100%);
+}
+
+.manicure a {
+    font-family: 'Economica', sans-serif;
+    margin-top: 7%;
+    margin-left: 5%;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.pedicure {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.pedicure:hover {
+    background: rgb(223, 95, 206);
+    background: linear-gradient(0deg, rgba(223, 95, 206, 1) 34%, rgba(252, 224, 255, 1) 100%);
+}
+
+.pedicure a {
+    text-align: justify;
+    text-align: center;
+    font-family: 'Economica', sans-serif;
+    margin-top: 3%;
+    margin-left: 5%;
+    float: left;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.sobrancelhas {
+    border-radius: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100px;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition: all 0.8s;
+}
+
+.sobrancelhas:hover {
+    background: rgb(223, 95, 206);
+    background: linear-gradient(0deg, rgba(223, 95, 206, 1) 34%, rgba(252, 224, 255, 1) 100%);
+}
+
+.sobrancelhas a {
+    font-family: 'Economica', sans-serif;
+    margin-top: 7%;
+    margin-left: 3%;
+    float: left;
+    color: white;
+    font-size: 20px;
+}
+
+.atendimento {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    backdrop-filter: blur(5px);
+    display: inline-block;
+    margin-top: 2%;
+    width: 99.9%;
+    height: 250px;
+}
+
+.convite {
+    border-radius: 10px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(200px);
+    text-align: center;
+}
+
+.convite a {
+    font-family: 'Economica', sans-serif;
+    color: white;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.boxhorario {
+    margin-top: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+    float: left;
+    width: 25%;
+    height: 170px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2%;
+    margin-left: 18%;
+    margin-right: 5%;
+}
+
+.boxhorario a {
+    font-family: 'Economica', sans-serif;
+    font-size: 23px;
+    color: white;
+}
+
+.boxcontato {
+    margin-right: 18%;
+    margin-top: 1%;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(70px);
+    float: right;
+    width: 25%;
+    height: 170px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.boxcontato a {
+    font-family: 'Economica', sans-serif;
+    font-size: 23px;
+    color: white;
+}
+
+.rodape {
+    margin-top: 0px;
+    width: 100%;
+    height: 48px;
+    background-color: #161623;
+    text-align: center;
+    justify-content: center;
+}
+
+.rodape a {
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: 'Economica', sans-serif;
+}
